@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>question</key>
+		<string>已知 UILabel 文本和要求宽度时求高度?</string>
+		<key>answer</key>
+		<string>[text boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 20, 1000)options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil]</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>如何去除导航阴影？</string>
+		<key>answer</key>
+		<string>[[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>LEFTBARBUTTONITEM修复 POSITION</string>
+		<key>answer</key>
+		<string>  UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc]  
+   initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace  
+                                     target:nil action:nil];  
+  negativeSpacer.width = -20;  
+  self.navigationItem.leftBarButtonItems = @[negativeSpacer,backBtn];</string>
+	</dict>
+</array>
+</plist>
