@@ -1,0 +1,27 @@
+{
+  "name": "diarydemo",
+  "version": "1.0.0",
+  "description": "每日一个小 Demo，活跃身心",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbzs/OCDiaryDemo.git"
+  },
+  "author": "hbzs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbzs/OCDiaryDemo/issues"
+  },
+  "homepage": "https://github.com/hbzs/OCDiaryDemo#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
