@@ -23,6 +23,6 @@
                                      target:nil action:nil];  
   negativeSpacer.width = -20;  
   self.navigationItem.leftBarButtonItems = @[negativeSpacer,backBtn];</string>
-	</dict>
+  </dict>
 </array>
 </plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A72F8891CEF355E00CF50F7 /* TodayFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F8881CEF355E00CF50F7 /* TodayFileManager.m */; };
+		8A7DEC751CEE822C00483C48 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7DEC741CEE822C00483C48 /* FileManager.m */; };
 		8A92F3441CEBDF4200F91EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A92F3431CEBDF4200F91EE0 /* main.m */; };
 		8A92F3471CEBDF4200F91EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A92F3461CEBDF4200F91EE0 /* AppDelegate.m */; };
 		8A92F34A1CEBDF4200F91EE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A92F3491CEBDF4200F91EE0 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 		8A92F3671CEBECCD00F91EE0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A92F3651CEBECCD00F91EE0 /* MainInterface.storyboard */; };
 		8A92F36B1CEBECCD00F91EE0 /* QADemoTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A92F35D1CEBECCD00F91EE0 /* QADemoTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8ABA1C381CEBFD97001517FA /* memo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ABA1C371CEBFD97001517FA /* memo.plist */; };
+		8ABA1C3D1CED389F001517FA /* MemoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C3C1CED389F001517FA /* MemoListTableViewCell.m */; };
+		8ABA1C441CED5664001517FA /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C411CED5664001517FA /* RPFloatingPlaceholderTextField.m */; };
+		8ABA1C451CED5664001517FA /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C431CED5664001517FA /* RPFloatingPlaceholderTextView.m */; };
+		8ABA1C4E1CED59D4001517FA /* MemoEditOrAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C4D1CED59D4001517FA /* MemoEditOrAddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A72F8871CEF355E00CF50F7 /* TodayFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayFileManager.h; sourceTree = "<group>"; };
+		8A72F8881CEF355E00CF50F7 /* TodayFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayFileManager.m; sourceTree = "<group>"; };
+		8A7DEC731CEE822C00483C48 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
+		8A7DEC741CEE822C00483C48 /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		8A92F33F1CEBDF4200F91EE0 /* QAMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QAMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A92F3431CEBDF4200F91EE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A92F3451CEBDF4200F91EE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +72,15 @@
 		8A92F3661CEBECCD00F91EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		8A92F3681CEBECCD00F91EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ABA1C371CEBFD97001517FA /* memo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = memo.plist; sourceTree = "<group>"; };
+		8ABA1C3B1CED389F001517FA /* MemoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoListTableViewCell.h; sourceTree = "<group>"; };
+		8ABA1C3C1CED389F001517FA /* MemoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoListTableViewCell.m; sourceTree = "<group>"; };
+		8ABA1C3F1CED5664001517FA /* RPFloatingPlaceholderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderConstants.h; sourceTree = "<group>"; };
+		8ABA1C401CED5664001517FA /* RPFloatingPlaceholderTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextField.h; sourceTree = "<group>"; };
+		8ABA1C411CED5664001517FA /* RPFloatingPlaceholderTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextField.m; sourceTree = "<group>"; };
+		8ABA1C421CED5664001517FA /* RPFloatingPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPFloatingPlaceholderTextView.h; sourceTree = "<group>"; };
+		8ABA1C431CED5664001517FA /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
+		8ABA1C4C1CED59D4001517FA /* MemoEditOrAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditOrAddViewController.h; sourceTree = "<group>"; };
+		8ABA1C4D1CED59D4001517FA /* MemoEditOrAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditOrAddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +124,7 @@
 		8A92F3411CEBDF4200F91EE0 /* QAMemo */ = {
 			isa = PBXGroup;
 			children = (
+				8ABA1C3E1CED5664001517FA /* RPFloatingPlaceholders */,
 				8A92F3451CEBDF4200F91EE0 /* AppDelegate.h */,
 				8A92F3461CEBDF4200F91EE0 /* AppDelegate.m */,
 				8A92F3481CEBDF4200F91EE0 /* ViewController.h */,
@@ -114,6 +134,12 @@
 				8A92F3501CEBDF4200F91EE0 /* LaunchScreen.storyboard */,
 				8A92F3531CEBDF4200F91EE0 /* Info.plist */,
 				8A92F3421CEBDF4200F91EE0 /* Supporting Files */,
+				8ABA1C3B1CED389F001517FA /* MemoListTableViewCell.h */,
+				8ABA1C3C1CED389F001517FA /* MemoListTableViewCell.m */,
+				8ABA1C4C1CED59D4001517FA /* MemoEditOrAddViewController.h */,
+				8ABA1C4D1CED59D4001517FA /* MemoEditOrAddViewController.m */,
+				8A7DEC731CEE822C00483C48 /* FileManager.h */,
+				8A7DEC741CEE822C00483C48 /* FileManager.m */,
 			);
 			path = QAMemo;
 			sourceTree = "<group>";
@@ -142,8 +168,22 @@
 				8A92F3651CEBECCD00F91EE0 /* MainInterface.storyboard */,
 				8A92F3681CEBECCD00F91EE0 /* Info.plist */,
 				8ABA1C371CEBFD97001517FA /* memo.plist */,
+				8A72F8871CEF355E00CF50F7 /* TodayFileManager.h */,
+				8A72F8881CEF355E00CF50F7 /* TodayFileManager.m */,
 			);
 			path = QADemoTodayExtension;
+			sourceTree = "<group>";
+		};
+		8ABA1C3E1CED5664001517FA /* RPFloatingPlaceholders */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA1C3F1CED5664001517FA /* RPFloatingPlaceholderConstants.h */,
+				8ABA1C401CED5664001517FA /* RPFloatingPlaceholderTextField.h */,
+				8ABA1C411CED5664001517FA /* RPFloatingPlaceholderTextField.m */,
+				8ABA1C421CED5664001517FA /* RPFloatingPlaceholderTextView.h */,
+				8ABA1C431CED5664001517FA /* RPFloatingPlaceholderTextView.m */,
+			);
+			path = RPFloatingPlaceholders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABA1C4E1CED59D4001517FA /* MemoEditOrAddViewController.m in Sources */,
 				8A92F34A1CEBDF4200F91EE0 /* ViewController.m in Sources */,
 				8A92F3471CEBDF4200F91EE0 /* AppDelegate.m in Sources */,
+				8A7DEC751CEE822C00483C48 /* FileManager.m in Sources */,
 				8A92F3441CEBDF4200F91EE0 /* main.m in Sources */,
+				8ABA1C3D1CED389F001517FA /* MemoListTableViewCell.m in Sources */,
+				8ABA1C441CED5664001517FA /* RPFloatingPlaceholderTextField.m in Sources */,
+				8ABA1C451CED5664001517FA /* RPFloatingPlaceholderTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A92F3641CEBECCD00F91EE0 /* TodayViewController.m in Sources */,
+				8A72F8891CEF355E00CF50F7 /* TodayFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

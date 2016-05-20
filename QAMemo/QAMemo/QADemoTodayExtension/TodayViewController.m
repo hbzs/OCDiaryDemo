@@ -10,6 +10,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "TodayFileManager.h"
 
 @interface TodayViewController () <NCWidgetProviding>
 
@@ -17,9 +18,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *questionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *showAnswerButton;
 @property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+@property (weak, nonatomic) IBOutlet UITextField *questionTextField;
+@property (weak, nonatomic) IBOutlet UITextField *answerTextField;
 
 @property (strong, nonatomic) NSArray *memo;
 @property (strong, nonatomic) NSDictionary *currentMemoIndex;
+- (IBAction)addQA:(id)sender;
 
 
 - (IBAction)changeQuestion:(id)sender;
@@ -34,7 +38,7 @@
   [self buttonStyle:self.changeQuestionButton];
   [self buttonStyle:self.showAnswerButton];
   
-  self.memo = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"memo" ofType:@"plist"]];
+  self.memo = [TodayFileManager readMemoFile];
   [self changeQuestionAction];
   
   [self hiddenAnswerLabel:[self heightForText:self.currentMemoIndex[@"question"]]];
@@ -48,7 +52,7 @@
     // If there's no update required, use NCUpdateResultNoData
     // If there's an update, use NCUpdateResultNewData
 
-    completionHandler(NCUpdateResultNewData);
+    completionHandler(NCUpdateResultNoData);
 }
 
 -(UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
@@ -82,14 +86,26 @@
 
 #pragma mark - action
 
+- (IBAction)addQA:(id)sender {
+  if ((![self.questionTextField.text isEqualToString:@""]) && (![self.answerTextField.text isEqualToString:@""])) {
+    NSMutableArray *memoList = [(self.memo?:@[]) mutableCopy];
+    NSDictionary *memo = @{@"question":self.questionTextField.text,@"answer":self.answerTextField.text};
+    [memoList addObject:memo];
+    
+    BOOL writeSucc = [TodayFileManager wrieToMemoFile:memoList];
+    if (writeSucc) {
+      self.questionTextField.text = @"";
+      self.answerTextField.text   = @"";
+      self.memo = [TodayFileManager readMemoFile];
+      [self changeQuestionAction];
+      [self changeQuestionUI];
+    }
+  }
+}
+
 - (IBAction)changeQuestion:(id)sender {
   [self changeQuestionAction];
-  if (!self.answerLabel.hidden) {
-    //答案显示
-    [self hiddenAnswerLabel:[self heightForText:self.currentMemoIndex[@"question"]]];
-  } else {
-    self.preferredContentSize = CGSizeMake(SCREEN_WIDTH, self.questionLabel.frame.origin.y + [self heightForText:self.currentMemoIndex[@"question"]] + 33 + 10);
-  }
+  [self changeQuestionUI];
 }
 
 - (IBAction)showAnswer:(id)sender {
@@ -110,6 +126,9 @@
 }
 
 - (void)changeQuestionAction {
+  if (!self.memo || self.memo.count == 0) {
+    return;
+  }
   int firstIndex = [self randomQAMemo];
   NSLog(@"index:%@",@(firstIndex));
   self.currentMemoIndex = self.memo[firstIndex];
@@ -122,6 +141,15 @@
 
 - (CGFloat)heightForText:(NSString *)text {
   return [text boundingRectWithSize:CGSizeMake(SCREEN_WIDTH - 20, 1000)options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height;
+}
+
+- (void)changeQuestionUI {
+  if (!self.answerLabel.hidden) {
+    //答案显示
+    [self hiddenAnswerLabel:[self heightForText:self.currentMemoIndex[@"question"]]];
+  } else {
+    self.preferredContentSize = CGSizeMake(SCREEN_WIDTH, self.questionLabel.frame.origin.y + [self heightForText:self.currentMemoIndex[@"question"]] + 33 + 10);
+  }
 }
 
 @end
