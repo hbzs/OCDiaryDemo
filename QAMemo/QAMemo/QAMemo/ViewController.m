@@ -10,6 +10,7 @@
 #import "MemoListTableViewCell.h"
 #import "MemoEditOrAddViewController.h"
 #import "FileManager.h"
+#import "MBProgressHUD.h"
 
 static NSString *const MemoListCellIdentifier = @"MemoListCellIdentifier";
 
@@ -32,11 +33,25 @@ static NSString *const MemoListCellIdentifier = @"MemoListCellIdentifier";
 }
 
 
-- (void)viewDidAppear:(BOOL)animated {
-  [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
   
-  self.memos = [NSMutableArray arrayWithArray:[FileManager readMemoFile]];
-  [self.tableView reloadData];
+  __weak __typeof(self) wSelf = self;
+  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+  hud.animationType = MBProgressHUDAnimationZoom;
+  hud.labelText = @"问答获取中……";
+  dispatch_async(dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+    [FileManager readMemoFile:^(NSArray *memoList) {
+      __strong __typeof(wSelf) sSelf = wSelf;
+      if (sSelf) {
+        sSelf.memos = [memoList mutableCopy];
+        dispatch_async(dispatch_get_main_queue(), ^{
+          [MBProgressHUD hideHUDForView:sSelf.view animated:YES];
+          [sSelf.tableView reloadData];
+        });
+      }
+    }];
+  });
 }
 
 #pragma mark - table view datasource & delegate
@@ -59,6 +74,7 @@ static NSString *const MemoListCellIdentifier = @"MemoListCellIdentifier";
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  [MBProgressHUD hideAllHUDsForView:self.view animated:NO];
   MemoEditOrAddViewController *vc = [segue destinationViewController];
   if ([segue.identifier isEqualToString:@"MemoEditIdentifier"]) {
     vc.title = @"修改问答";

@@ -1,0 +1,15 @@
+PODS:
+  - CocoaSecurity (1.2.4)
+  - MBProgressHUD (0.9.2)
+
+DEPENDENCIES:
+  - CocoaSecurity
+  - MBProgressHUD (~> 0.9.2)
+
+SPEC CHECKSUMS:
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+
+PODFILE CHECKSUM: 4d8781cfc07a0b459c07fcfeb907ee4ee5fb2834
+
+COCOAPODS: 1.0.0.rc.2

@@ -8,10 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^MemoList)(NSArray *);
+typedef void (^WriteSuccess)(void);
+typedef void (^WriteFailure)(void);
+
+extern NSString *const MemoQuestion;
+extern NSString *const MemoAnswer;
+
 @interface FileManager : NSObject
 
-+ (NSArray *)readMemoFile;
-+ (BOOL)wrieToMemoFile:(NSArray *)data;
-+ (BOOL)createMemoFile;
++ (void)readMemoFile:(MemoList)memoList;
++ (void)wrieToMemoFile:(NSDictionary *)qamemoList
+               success:(WriteSuccess)writeSuccess
+               failure:(WriteFailure)writeFailure;
 
 @end

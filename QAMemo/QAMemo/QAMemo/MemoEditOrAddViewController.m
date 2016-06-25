@@ -10,6 +10,7 @@
 #import "RPFloatingPlaceholderTextField.h"
 #import "RPFloatingPlaceholderTextView.h"
 #import "FileManager.h"
+#import <CloudKit/CloudKit.h>
 
 @interface MemoEditOrAddViewController ()
 
@@ -18,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet RPFloatingPlaceholderTextField *questionLabel;
 @property (weak, nonatomic) IBOutlet RPFloatingPlaceholderTextView *answerLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *finishButtonItem;
 
 @end
 
@@ -35,18 +37,19 @@
 }
 
 - (IBAction)finishMemo:(id)sender {
-  NSMutableArray *memoList = [([FileManager readMemoFile]?:@[]) mutableCopy];
   NSDictionary *memo = @{@"question":self.questionLabel.text,@"answer":self.answerLabel.text};
-  [memoList addObject:memo];
   
-  BOOL writeSucc = [FileManager wrieToMemoFile:memoList];
-  if (writeSucc) {
-    NSLog(@"write succ");
-  } else {
-    NSLog(@"write error");
-  }
-  
-  [self.navigationController popViewControllerAnimated:YES];
+  __weak __typeof(self) wSelf = self;
+  self.finishButtonItem.enabled = NO;
+  [FileManager wrieToMemoFile:memo success:^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+      [wSelf.navigationController popViewControllerAnimated:YES];
+    });
+  } failure:^{
+    dispatch_async(dispatch_get_main_queue(), ^{
+      wSelf.finishButtonItem.enabled = YES;
+    });
+  }];
 }
 
 @end

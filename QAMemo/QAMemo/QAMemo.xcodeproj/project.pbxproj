@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A47CFB41CFC794B00BDFC58 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A47CFB31CFC794B00BDFC58 /* CloudKit.framework */; };
 		8A72F8891CEF355E00CF50F7 /* TodayFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A72F8881CEF355E00CF50F7 /* TodayFileManager.m */; };
 		8A7DEC751CEE822C00483C48 /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7DEC741CEE822C00483C48 /* FileManager.m */; };
 		8A92F3441CEBDF4200F91EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A92F3431CEBDF4200F91EE0 /* main.m */; };
@@ -24,6 +25,8 @@
 		8ABA1C441CED5664001517FA /* RPFloatingPlaceholderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C411CED5664001517FA /* RPFloatingPlaceholderTextField.m */; };
 		8ABA1C451CED5664001517FA /* RPFloatingPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C431CED5664001517FA /* RPFloatingPlaceholderTextView.m */; };
 		8ABA1C4E1CED59D4001517FA /* MemoEditOrAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA1C4D1CED59D4001517FA /* MemoEditOrAddViewController.m */; };
+		C7D134DFF95B68A98512A0B0 /* libPods-QAMemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9316517C8CC5F8032EB14B25 /* libPods-QAMemo.a */; };
+		CA64662996DA41AFCCD37511 /* libPods-QADemoTodayExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4295815CBD247EC03C5FB173 /* libPods-QADemoTodayExtension.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		052FE5563581C8D7787DFAE7 /* Pods-QAMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QAMemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QAMemo/Pods-QAMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4295815CBD247EC03C5FB173 /* libPods-QADemoTodayExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QADemoTodayExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FF27840401497E700F41DA /* Pods-QADemoTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QADemoTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-QADemoTodayExtension/Pods-QADemoTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
+		74111108C078C84CC47CB746 /* Pods-QADemoTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QADemoTodayExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QADemoTodayExtension/Pods-QADemoTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		744771557799CB7805ABBBDA /* Pods-QAMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QAMemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-QAMemo/Pods-QAMemo.release.xcconfig"; sourceTree = "<group>"; };
+		8A47CFB21CFC78EF00BDFC58 /* QAMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QAMemo.entitlements; sourceTree = "<group>"; };
+		8A47CFB31CFC794B00BDFC58 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		8A72F8871CEF355E00CF50F7 /* TodayFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayFileManager.h; sourceTree = "<group>"; };
 		8A72F8881CEF355E00CF50F7 /* TodayFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayFileManager.m; sourceTree = "<group>"; };
 		8A7DEC731CEE822C00483C48 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 		8ABA1C431CED5664001517FA /* RPFloatingPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPFloatingPlaceholderTextView.m; sourceTree = "<group>"; };
 		8ABA1C4C1CED59D4001517FA /* MemoEditOrAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoEditOrAddViewController.h; sourceTree = "<group>"; };
 		8ABA1C4D1CED59D4001517FA /* MemoEditOrAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoEditOrAddViewController.m; sourceTree = "<group>"; };
+		9316517C8CC5F8032EB14B25 /* libPods-QAMemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QAMemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A47CFB41CFC794B00BDFC58 /* CloudKit.framework in Frameworks */,
+				C7D134DFF95B68A98512A0B0 /* libPods-QAMemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A92F3601CEBECCD00F91EE0 /* NotificationCenter.framework in Frameworks */,
+				CA64662996DA41AFCCD37511 /* libPods-QADemoTodayExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 				8A92F3611CEBECCD00F91EE0 /* QADemoTodayExtension */,
 				8A92F35E1CEBECCD00F91EE0 /* Frameworks */,
 				8A92F3401CEBDF4200F91EE0 /* Products */,
+				C845DDC2008507BA963D842F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +139,7 @@
 		8A92F3411CEBDF4200F91EE0 /* QAMemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A47CFB21CFC78EF00BDFC58 /* QAMemo.entitlements */,
 				8ABA1C3E1CED5664001517FA /* RPFloatingPlaceholders */,
 				8A92F3451CEBDF4200F91EE0 /* AppDelegate.h */,
 				8A92F3461CEBDF4200F91EE0 /* AppDelegate.m */,
@@ -155,7 +171,10 @@
 		8A92F35E1CEBECCD00F91EE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A47CFB31CFC794B00BDFC58 /* CloudKit.framework */,
 				8A92F35F1CEBECCD00F91EE0 /* NotificationCenter.framework */,
+				4295815CBD247EC03C5FB173 /* libPods-QADemoTodayExtension.a */,
+				9316517C8CC5F8032EB14B25 /* libPods-QAMemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +205,17 @@
 			path = RPFloatingPlaceholders;
 			sourceTree = "<group>";
 		};
+		C845DDC2008507BA963D842F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74111108C078C84CC47CB746 /* Pods-QADemoTodayExtension.debug.xcconfig */,
+				68FF27840401497E700F41DA /* Pods-QADemoTodayExtension.release.xcconfig */,
+				052FE5563581C8D7787DFAE7 /* Pods-QAMemo.debug.xcconfig */,
+				744771557799CB7805ABBBDA /* Pods-QAMemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,10 +223,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A92F3561CEBDF4200F91EE0 /* Build configuration list for PBXNativeTarget "QAMemo" */;
 			buildPhases = (
+				5D621E3C0DCFC9004969B43F /* 📦 Check Pods Manifest.lock */,
 				8A92F33B1CEBDF4200F91EE0 /* Sources */,
 				8A92F33C1CEBDF4200F91EE0 /* Frameworks */,
 				8A92F33D1CEBDF4200F91EE0 /* Resources */,
 				8A92F36F1CEBECCE00F91EE0 /* Embed App Extensions */,
+				791938A8BACE95435E5AC587 /* 📦 Embed Pods Frameworks */,
+				AC113648B4A5E3E140491BE2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A92F36C1CEBECCE00F91EE0 /* Build configuration list for PBXNativeTarget "QADemoTodayExtension" */;
 			buildPhases = (
+				E2526958FB751CF9759BB004 /* 📦 Check Pods Manifest.lock */,
 				8A92F3591CEBECCD00F91EE0 /* Sources */,
 				8A92F35A1CEBECCD00F91EE0 /* Frameworks */,
 				8A92F35B1CEBECCD00F91EE0 /* Resources */,
+				851424D9B01320BBCADED26C /* 📦 Embed Pods Frameworks */,
+				8185BF0D37FBA4F56C19EBEA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,16 +272,19 @@
 				TargetAttributes = {
 					8A92F33E1CEBDF4200F91EE0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = YSEKA5262R;
+						DevelopmentTeam = DY7D45J8B9;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
 							};
 						};
 					};
 					8A92F35C1CEBECCD00F91EE0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = YSEKA5262R;
+						DevelopmentTeam = DY7D45J8B9;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -294,6 +333,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D621E3C0DCFC9004969B43F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		791938A8BACE95435E5AC587 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QAMemo/Pods-QAMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8185BF0D37FBA4F56C19EBEA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QADemoTodayExtension/Pods-QADemoTodayExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851424D9B01320BBCADED26C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QADemoTodayExtension/Pods-QADemoTodayExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC113648B4A5E3E140491BE2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QAMemo/Pods-QAMemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2526958FB751CF9759BB004 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A92F33B1CEBDF4200F91EE0 /* Sources */ = {
@@ -442,13 +574,15 @@
 		};
 		8A92F3571CEBDF4200F91EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052FE5563581C8D7787DFAE7 /* Pods-QAMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QAMemo/QAMemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QAMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbzshome.QAMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbzsios.QAMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -456,13 +590,15 @@
 		};
 		8A92F3581CEBDF4200F91EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744771557799CB7805ABBBDA /* Pods-QAMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QAMemo/QAMemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QAMemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbzshome.QAMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbzsios.QAMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -470,26 +606,30 @@
 		};
 		8A92F36D1CEBECCE00F91EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74111108C078C84CC47CB746 /* Pods-QADemoTodayExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QADemoTodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbzshome.QAMemo.QADemoTodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbzsios.QAMemo.QADemoTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		8A92F36E1CEBECCE00F91EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FF27840401497E700F41DA /* Pods-QADemoTodayExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QADemoTodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hbzshome.QAMemo.QADemoTodayExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hbzsios.QAMemo.QADemoTodayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

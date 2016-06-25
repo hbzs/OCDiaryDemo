@@ -13,6 +13,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="TbH-vS-QfV">
+                            <rect key="frame" x="0.0" y="192" width="600" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MemoListCellIdentifier" id="CbT-Wq-RHE" userLabel="MemoListTableViewCell" customClass="MemoListTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="100"/>
@@ -131,6 +136,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answerLabel" destination="tRd-yV-zLg" id="jSg-6k-pcw"/>
+                        <outlet property="finishButtonItem" destination="mYC-ub-6AF" id="4cj-Wk-hO3"/>
                         <outlet property="questionLabel" destination="rCL-rL-N68" id="VnD-Nq-FBD"/>
                     </connections>
                 </viewController>
