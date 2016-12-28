@@ -3,3 +3,4 @@
 
 - Day1：[Today Widget(QAMemo，问答记忆)](./QAMemo)
     + 此坑越开越大，只好单独列出新项目
+- Day2:[Choose(MacFeatureAppList)](./macdev/MacFeatureAppList/MacFeatureAppList/Choose)
